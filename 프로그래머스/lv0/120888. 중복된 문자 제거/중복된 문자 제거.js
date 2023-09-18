@@ -5,3 +5,8 @@ function solution(my_string) {
     console.log(sort)
     return sort;
 }
+
+// 다른 사람 문제 풀이
+// function solution(my_string) {
+//     return [...new Set(my_string)].join('');
+// }
