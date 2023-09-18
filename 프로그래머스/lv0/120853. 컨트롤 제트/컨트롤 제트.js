@@ -9,8 +9,3 @@ function solution(s) {
         }
     }, 0)
 }
-
-// 다른 사람 문제 풀이
-// function solution(my_string) {
-//     return [...new Set(my_string)].join('');
-// }
