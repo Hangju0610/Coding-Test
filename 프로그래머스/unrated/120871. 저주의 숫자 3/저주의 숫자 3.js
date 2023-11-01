@@ -1,17 +1,7 @@
-function solution(n) {
-    let answer = 1
-    for (i = 1;i < n; i++){
-        answer++
-        answer = math3(answer)
-    }
-    return answer
-}
-
-function math3(answer) {
-    if (answer % 3 == 0 || String(answer).includes('3')){
-        answer ++
-        return math3(answer)
-    } else {
-        return answer
-    }
+ function solution(n) {
+     console.log([...Array(n*3)].map((_, i) => i + 1))
+     
+  return [...Array(n * 3)]
+    .map((_, i) => i + 1)
+    .filter((num) => num % 3 !== 0 && !num.toString().includes("3"))[n - 1];
 }
