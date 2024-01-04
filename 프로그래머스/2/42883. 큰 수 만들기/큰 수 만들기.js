@@ -20,11 +20,6 @@ function solution(number, k) {
     k--;
   }
 
-  // 앞부분의 0 제거
-  while (stack.length > 0 && stack[0] === "0") {
-    stack.shift();
-  }
-
   // 스택이 비어있다면 0을 반환
   return stack.length === 0 ? "0" : stack.join("");
 }
