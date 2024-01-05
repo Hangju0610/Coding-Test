@@ -16,5 +16,4 @@ function solution(priorities, location) {
         indexArray.push(process);
     }
     return answerArray.indexOf(location) + 1;
-    
 }
