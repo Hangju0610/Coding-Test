@@ -1,14 +1,16 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    
+    static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
     public static void main(String[] args) throws Exception {
         int year = Integer.parseInt(br.readLine());
         int adYear = year - 543;
-        System.out.println(adYear);
+        bw.write(String.valueOf(adYear));
+        bw.flush();
     }
 }
